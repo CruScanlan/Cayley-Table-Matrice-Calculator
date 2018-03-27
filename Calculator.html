@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cayley Table Matrice Calculator</title>
+
+    <!-- Bootstrap -->
+    <link href="./src/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./src/css/main.css" rel="stylesheet">
+	
+	<link href="./src/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="row" style="margin-top: 20px; margin-left: 20px">
+    <div class="col-md-6">
+        <div class="row" id="matrix-area">
+            <div class="row matrix" id="matrix-1">
+                <div class="col-md-4 matrix-label">
+                    Matrix 1
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="matrix-1-pos-1">
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="matrix-1-pos-2">
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="matrix-1-pos-3">
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="matrix-1-pos-4">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <button class="btn btn-primary" onclick="addMatrix();">Add Matrix</button>
+        </div>
+    </div>
+</div>
+<div class="row"  style="margin-top: 20px; margin-left: 20px">
+    <div class="col-md-1" style="padding-left: 0">
+        <button class="btn btn-success" onclick="calculate();">Calculate</button>
+    </div>
+    <div class="col-md-11">
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" id="working" value="1">
+                Show Working
+            </label>
+        </div>
+    </div>
+    <div class="col-md-12" style="margin-top: 20px">
+        <table class="table table-bordered">
+            <tbody id="table-area">
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-12" id="working-area" style="margin-top: 20px">
+    </div>
+</div>
+
+
+<!--
+    Javascript
+-->
+
+<!-- Bootstrap and jQuery -->
+<script type="text/javascript" src="./src/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./src/js/tether.min.js"></script>
+<script type="text/javascript" src="./src/js/bootstrap.min.js"></script>
+
+<!-- Other -->
+<script type="text/javascript" src="./src/js/math.min.js"></script>
+<script type="text/javascript" src="./src/js/calculator.js"></script>
+</body>
+</html>

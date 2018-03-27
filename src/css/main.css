@@ -1,0 +1,11 @@
+.matrix {
+    margin-top: 20px;
+}
+
+.matrix-label {
+    text-align: center;
+}
+
+.fatoutside td{
+    border: 3px solid #eceeef !important;
+}
